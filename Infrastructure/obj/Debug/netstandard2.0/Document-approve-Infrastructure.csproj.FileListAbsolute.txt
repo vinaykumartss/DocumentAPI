@@ -1,0 +1,9 @@
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Infrastructure\bin\Debug\netstandard2.0\Document-approve-Infrastructure.deps.json
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Infrastructure\bin\Debug\netstandard2.0\Document-approve-Infrastructure.dll
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Infrastructure\bin\Debug\netstandard2.0\Document-approve-Infrastructure.pdb
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Infrastructure\obj\Debug\netstandard2.0\Document-approve-Infrastructure.csprojAssemblyReference.cache
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Infrastructure\obj\Debug\netstandard2.0\Document-approve-Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Infrastructure\obj\Debug\netstandard2.0\Document-approve-Infrastructure.AssemblyInfo.cs
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Infrastructure\obj\Debug\netstandard2.0\Document-approve-Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Infrastructure\obj\Debug\netstandard2.0\Document-approve-Infrastructure.dll
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Infrastructure\obj\Debug\netstandard2.0\Document-approve-Infrastructure.pdb

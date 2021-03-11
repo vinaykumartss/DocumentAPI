@@ -1,0 +1,9 @@
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\ApiRequest\bin\Debug\netstandard2.0\Document-approve-ApiRequest.deps.json
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\ApiRequest\bin\Debug\netstandard2.0\Document-approve-ApiRequest.dll
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\ApiRequest\bin\Debug\netstandard2.0\Document-approve-ApiRequest.pdb
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\ApiRequest\obj\Debug\netstandard2.0\Document-approve-ApiRequest.csprojAssemblyReference.cache
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\ApiRequest\obj\Debug\netstandard2.0\Document-approve-ApiRequest.AssemblyInfoInputs.cache
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\ApiRequest\obj\Debug\netstandard2.0\Document-approve-ApiRequest.AssemblyInfo.cs
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\ApiRequest\obj\Debug\netstandard2.0\Document-approve-ApiRequest.csproj.CoreCompileInputs.cache
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\ApiRequest\obj\Debug\netstandard2.0\Document-approve-ApiRequest.dll
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\ApiRequest\obj\Debug\netstandard2.0\Document-approve-ApiRequest.pdb
