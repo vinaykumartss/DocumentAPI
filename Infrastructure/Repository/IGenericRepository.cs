@@ -9,10 +9,12 @@ namespace Document.Approve.Infrastructure.Configuration.Repository
     public interface IGenericRepository<T> where T : class
     {
         Task<T> GetByIdAsync(int id);
-        Task<IEnumerable<T>> GetAllAsync();
+        Task<IList<T>> GetAllAsync();
         Task<T> AddAsync(T entity);
         Task<T> DeleteAsync(int id);
         Task<T> UpdateAsync(T entity);
+
+        Task<T> Search(Expression<Func<T, bool>> predicate);
 
     }
 }

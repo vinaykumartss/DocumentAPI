@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Document.Approve.Domain.Entities;
+using Document.Approve.Infrastructure.Configuration.Repository;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -17,23 +19,33 @@ namespace Document_approve_api.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
-
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        private IGenericRepository<User> _user;
+        public WeatherForecastController(ILogger<WeatherForecastController> logger,  IGenericRepository<User> user)
         {
             _logger = logger;
+            _user = user;
         }
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public async Task<int> Get()
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            try
             {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+                User userIn = new User()
+                {
+                   
+                  
+                  
+                };
+                await _user.AddAsync(userIn);
+                return 1;
+
+            } catch(Exception ex)
+            {
+                return 0;
+            }
+
+           
         }
     }
 }

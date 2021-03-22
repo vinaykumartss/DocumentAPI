@@ -23,5 +23,10 @@ namespace Document.Approve.Infrastructure.Configuration
         }
 
         public DbSet<User> User { get; set; }
+
+
+        public DbSet<Role> Role { get; set; }
+
+        public DbSet<Department> Department { get; set; }
     }
 }

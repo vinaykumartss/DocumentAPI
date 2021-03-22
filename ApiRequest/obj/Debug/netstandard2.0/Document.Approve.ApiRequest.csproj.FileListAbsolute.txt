@@ -1,0 +1,9 @@
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\ApiRequest\bin\Debug\netstandard2.0\Document.Approve.ApiRequest.deps.json
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\ApiRequest\bin\Debug\netstandard2.0\Document.Approve.ApiRequest.dll
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\ApiRequest\bin\Debug\netstandard2.0\Document.Approve.ApiRequest.pdb
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\ApiRequest\obj\Debug\netstandard2.0\Document.Approve.ApiRequest.AssemblyInfoInputs.cache
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\ApiRequest\obj\Debug\netstandard2.0\Document.Approve.ApiRequest.AssemblyInfo.cs
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\ApiRequest\obj\Debug\netstandard2.0\Document.Approve.ApiRequest.csproj.CoreCompileInputs.cache
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\ApiRequest\obj\Debug\netstandard2.0\Document.Approve.ApiRequest.dll
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\ApiRequest\obj\Debug\netstandard2.0\Document.Approve.ApiRequest.pdb
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\ApiRequest\obj\Debug\netstandard2.0\Document.Approve.ApiRequest.csprojAssemblyReference.cache

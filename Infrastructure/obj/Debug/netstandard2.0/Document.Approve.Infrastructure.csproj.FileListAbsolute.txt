@@ -1,0 +1,12 @@
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Infrastructure\bin\Debug\netstandard2.0\Document.Approve.Infrastructure.deps.json
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Infrastructure\bin\Debug\netstandard2.0\Document.Approve.Infrastructure.dll
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Infrastructure\bin\Debug\netstandard2.0\Document.Approve.Infrastructure.pdb
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Infrastructure\bin\Debug\netstandard2.0\Document.Approve.Domain.dll
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Infrastructure\bin\Debug\netstandard2.0\Document.Approve.Domain.pdb
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Infrastructure\obj\Debug\netstandard2.0\Document.Approve.Infrastructure.csprojAssemblyReference.cache
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Infrastructure\obj\Debug\netstandard2.0\Document.Approve.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Infrastructure\obj\Debug\netstandard2.0\Document.Approve.Infrastructure.AssemblyInfo.cs
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Infrastructure\obj\Debug\netstandard2.0\Document.Approve.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Infrastructure\obj\Debug\netstandard2.0\Document.Approve.Infrastructure.csproj.CopyComplete
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Infrastructure\obj\Debug\netstandard2.0\Document.Approve.Infrastructure.dll
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Infrastructure\obj\Debug\netstandard2.0\Document.Approve.Infrastructure.pdb

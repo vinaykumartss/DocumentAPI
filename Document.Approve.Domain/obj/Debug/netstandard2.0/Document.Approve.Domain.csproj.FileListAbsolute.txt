@@ -1,0 +1,9 @@
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Document.Approve.Domain\bin\Debug\netstandard2.0\Document.Approve.Domain.deps.json
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Document.Approve.Domain\bin\Debug\netstandard2.0\Document.Approve.Domain.dll
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Document.Approve.Domain\bin\Debug\netstandard2.0\Document.Approve.Domain.pdb
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Document.Approve.Domain\obj\Debug\netstandard2.0\Document.Approve.Domain.csprojAssemblyReference.cache
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Document.Approve.Domain\obj\Debug\netstandard2.0\Document.Approve.Domain.AssemblyInfoInputs.cache
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Document.Approve.Domain\obj\Debug\netstandard2.0\Document.Approve.Domain.AssemblyInfo.cs
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Document.Approve.Domain\obj\Debug\netstandard2.0\Document.Approve.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Document.Approve.Domain\obj\Debug\netstandard2.0\Document.Approve.Domain.dll
+C:\Users\Vinay.Rathore\source\repos\Document-approve-api\Document.Approve.Domain\obj\Debug\netstandard2.0\Document.Approve.Domain.pdb

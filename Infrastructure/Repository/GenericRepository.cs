@@ -22,7 +22,7 @@ namespace Document.Approve.Infrastructure.Configuration.Repository
             return await _context.Set<T>().FindAsync(id);
         }
 
-        public async Task<IEnumerable<T>> GetAllAsync()
+        public async Task<IList<T>> GetAllAsync()
         {
             return await _context.Set<T>().ToListAsync();
         }
@@ -43,10 +43,8 @@ namespace Document.Approve.Infrastructure.Configuration.Repository
             {
                 return entity;
             }
-
             _context.Set<T>().Remove(entity);
             await _context.SaveChangesAsync();
-
             return entity;
         }
 
@@ -57,6 +55,11 @@ namespace Document.Approve.Infrastructure.Configuration.Repository
             return entity;
         }
 
+
+        public async Task<T> Search(Expression<Func<T, bool>> predicate)
+        {
+            return await _context.Set<T>().Where(predicate).FirstOrDefaultAsync();
+        }
 
     }
 }

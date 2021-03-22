@@ -12,23 +12,35 @@ namespace Document.Approve.Infrastructure.Configuration
     {
         public void Configure(EntityTypeBuilder<User> entity)
         {
-            // Table Name
-            entity.ToTable("user");
-            // Primary Key
+          
+            entity.ToTable("User_Details");
             entity.HasKey(k => k.UserId);
-            // Index
-            entity.HasIndex(e => e.Username).HasName("user_username_key").IsUnique();
-            entity.Property(e => e.UserId).HasColumnName("user_id");
-            entity.Property(e => e.CreatedDate).HasColumnName("created_date");
-            entity.Property(e => e.EmailAddress).HasColumnName("email_address").HasMaxLength(250);
-            entity.Property(e => e.FirstName).HasColumnName("first_name").HasMaxLength(150);
-            entity.Property(e => e.LastName).HasColumnName("last_name").HasMaxLength(150);
-            entity.Property(e => e.LastUpdated).HasColumnName("last_updated");
-            entity.Property(e => e.Password).HasColumnName("password").HasMaxLength(500);
-            entity.Property(e => e.IsActive).HasColumnName("isActive");
-            entity.Property(e => e.Username).IsRequired().HasColumnName("username").HasMaxLength(250);
+            entity.Property(e => e.UserId).HasColumnName("User_Id");
 
-        }
+            entity.Property(e => e.LogInID).HasColumnName("LogIn_ID");
+
+            entity.Property(e => e.UserName).HasColumnName("User_Name");
+            entity.Property(e => e.Password).HasColumnName("Password");
+            entity.Property(e => e.Password1).HasColumnName("Password1");
+            entity.Property(e => e.Password2).HasColumnName("Password2");
+            entity.Property(e => e.Password3).HasColumnName("Password3");
+            entity.Property(e => e.Password4).HasColumnName("Password4");
+            entity.Property(e => e.UserDept).HasColumnName("User_Dept");
+            entity.Property(e => e.EmaiiId).HasColumnName("Email_ID").HasMaxLength(250);
+
+
+
+
+          
+            entity.Property(e => e.UserStatus).HasColumnName("User_Status");
+
+            entity.Property(e => e.UpdatedOn).HasColumnName("UpdatedOn");
+            entity.Property(e => e.UpdatedBy).HasColumnName("UpdatedBy");
+            entity.Property(e => e.CreatedOn).HasColumnName("CreatedOn");
+            entity.Property(e => e.CreatedBy).HasColumnName("CreatedBy");
+         
+             
+    }
 
     }
 }
