@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Document.Approve.ApiRequest.Model.Role.RoleRequest;
 using Document.Approve.ApiRequest.Model.Department.DepartmentRequest;
+using Document.Approve.ApiRequest.Model.UserResponse;
 
 namespace Document_approve_api.AutoMapperConfig
 {
@@ -19,6 +20,7 @@ namespace Document_approve_api.AutoMapperConfig
             CreateMap<UserRequest, User>();
             CreateMap<RoleRequest, Role>();
             CreateMap<DepartmentRequest, Department>();
+            CreateMap<User, UserResponse>();
 
         }
     }

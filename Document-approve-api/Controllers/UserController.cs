@@ -13,6 +13,8 @@ using System.Collections;
 using AutoMapper;
 using Document.Approve.ApiRequest.Model.UserRequest;
 using Microsoft.AspNetCore.Cors;
+using Document.Approve.ApiRequest.Exceptions;
+using Document.Approve.ApiRequest.Model;
 
 namespace Document_approve_api.Controllers
 {
@@ -21,10 +23,10 @@ namespace Document_approve_api.Controllers
     public class UserController : ControllerBase
     {
 
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILogger<UserController> _logger;
         private IGenericRepository<User> _user;
         private readonly IMapper _mapper;
-        public UserController(ILogger<WeatherForecastController> logger, 
+        public UserController(ILogger<UserController> logger, 
             IGenericRepository<User> user,
             IMapper mapper)
         {
@@ -54,38 +56,94 @@ namespace Document_approve_api.Controllers
         [HttpGet]
         [Route("GetAll")]
        
-        public async Task<IList<User>> GetAllAsync()
+        public async Task<ApiResponse> GetAllAsync()
         {
+            ApiResponse response = new ApiResponse();
             try
             {
-                IList<User> objResponse = await _user.GetAllAsync();
-                return objResponse;
-
+                IList<User> userList = await _user.GetAllAsync();
+                var objResponse = _mapper.Map<IList<User>, IList<UserResponse>>(userList);
+                response.IsSuccess = true;
+                response.Response = objResponse;
             }
             catch (Exception ex)
             {
-                return null;
+                response.IsSuccess = false;
+                response.ErrorMessage = $"Something went wrong, please try after some try";
+                
             }
+            return response;
+
         }
 
         [HttpPost]
         [Route("Login")]
-        public async Task<Boolean> LoginAsync(LoginRequest login)
+        public async Task<ApiResponse> LoginAsync(LoginRequest login)
         {
+            ApiResponse response = new ApiResponse();
             try
             {
                 User objResponse = await _user.Search(x=>x.UserName == login.UserName);
                 if(!BCrypt.Net.BCrypt.Verify(login.Password, objResponse.Password))
                 {
-                    return false;
+                    var mapdata = _mapper.Map<User, UserResponse>(objResponse);
+                    response.IsSuccess = true;
+                    response.Response = mapdata;
                 }
 
-                return true;
+               
             }
             catch (Exception ex)
             {
-               return false;
+                response.IsSuccess = false;
+                response.ErrorMessage = $"Something went wrong, please try after some try";
             }
+
+            return response;
+
+        }
+
+
+        [HttpGet]
+        [Route("{id}")]
+        public async Task<ApiResponse> GetByIdAsync(int id)
+        {
+            ApiResponse response = new ApiResponse();
+            try
+            {
+                User objResponse = await _user.GetByIdAsync(id);
+                var mapdata = _mapper.Map<User, UserResponse>(objResponse);
+                response.IsSuccess = true;
+                response.Response = mapdata;
+
+            }
+            catch (Exception ex)
+            {
+                response.IsSuccess = false;
+                response.ErrorMessage = $"Something went wrong, please try after some try";
+            }
+            return response;
+        }
+
+
+        [HttpPost]
+        [Route("Delete/{id}")]
+        public async Task<ApiResponse> Delete(int id)
+        {
+            ApiResponse response = new ApiResponse();
+            try
+            {
+                User objResponse = await _user.DeleteAsync(id);
+                var mapdata = _mapper.Map<User, UserResponse>(objResponse);
+                response.IsSuccess = true;
+                response.Response = mapdata;
+            }
+            catch (Exception ex)
+            {
+                response.IsSuccess = false;
+                response.ErrorMessage = $"Something went wrong, please try after some try";
+            }
+            return response;
         }
 
 
@@ -121,38 +179,11 @@ namespace Document_approve_api.Controllers
         }
 
 
-        [HttpPost]
-        [Route("Delete/{id}")]
-        public async Task<Boolean> Delete(int id)
-        {
-            try
-            {
-                User objResponse = await _user.DeleteAsync(id);
-                return true;
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
-        }
+      
 
 
 
-        [HttpPost]
-        [Route("{id}")]
-        public async Task<User> GetByIdAsync(int id)
-        {
-            try
-            {
-                User objResponse = await _user.GetByIdAsync(id);
-                return objResponse;
-
-            }
-            catch (Exception ex)
-            {
-                return null;
-            }
-        }
+       
 
         [HttpPost]
         [Route("ChangePassword")]

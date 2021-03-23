@@ -7,14 +7,16 @@ namespace Document.Approve.ApiRequest.Model.UserResponse
    public class UserResponse
     {
         public int UserId { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
 
-        public string Email { get; set; }
+        public string LogInID { get; set; }
 
-        public string Role { get; set; }
-        public int IsActive { get; set; }
+        public string UserDept { get; set; }
 
+        public string UserName { get; set; }
+
+        public string EmaiiId { get; set; }
+     
+        public string UserStatus { get; set; }
         public DateTime CreatedOn { get; set; }
 
         public string CreatedBy { get; set; }
@@ -22,5 +24,8 @@ namespace Document.Approve.ApiRequest.Model.UserResponse
         public DateTime? UpdatedOn { get; set; }
 
         public string UpdatedBy { get; set; }
+
     }
-}
+   
+
+    }

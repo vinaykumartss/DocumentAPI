@@ -7,6 +7,7 @@
   <ItemGroup>
     <Folder Include="Model\Department\DepartmentResponse\" />
     <Folder Include="Model\NewFolder\" />
+    <Folder Include="Exception\" />
   </ItemGroup>
 
 </Project>

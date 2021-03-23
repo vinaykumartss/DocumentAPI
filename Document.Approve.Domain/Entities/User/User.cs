@@ -28,6 +28,6 @@ namespace Document.Approve.Domain.Entities
 
         public string UserStatus { get; set; }
 
-        
+      
     }
 }
